@@ -7,14 +7,36 @@
     <title>Etch-a-sketch</title>
 </head>
 <body>
-    <div class="settings-container">
+    <div class="sidebar-container">
         
-        <div class="size-setting">
-            <div class="size-value" id="sizeValue">16x16</div>
-            <input type="range" id="sizeSlider" value="16" max="64" min="16">
+        <div class="settings-container">
+            <div class="size-setting">
+                <div class="size-value" id="sizeValue">16x16</div>
+                <input type="range" id="sizeSlider" value="16" max="64" min="16">
+            </div>
+    
+            <input type="color" id="colorPicker" >
+    
+            <button id="colorModeBtn">Color Mode</button>
+            <button id="randomModeBtn">Random Mode</button>
+            <button id="eraserBtn">Eraser</button>
+            <button id="clearBtn">Clear</button>
         </div>
 
-        <input type="color" id="colorPicker" >
+        <footer>
+            <p>Copyright © 
+                <script>
+                    document.write(new Date().getFullYear())
+                    </script>
+                    Ahmed Albarghouti
+            </p>
+
+            <a href="https://github.com/AhmedAlbarghouti" target="_blank"></a>
+        </footer>
+
+        <script src="script.js"></script>
+     
+        
         
     </div>
 </body>
