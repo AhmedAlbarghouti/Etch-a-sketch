@@ -1,6 +1,7 @@
 const colorPicker = document.querySelector("#colorPicker");
-let currentColor = colorPicker.value;
 const sizeSlider = document.querySelector("#sizeSlider");
+const sizeLabel = document.querySelector("#sizeLabel");
+let currentColor = colorPicker.value;
 let currentSize = sizeSlider.value;
 
 
@@ -15,5 +16,11 @@ colorPicker.addEventListener("change", () => {
 
 sizeSlider.addEventListener("change", () => {
     currentSize = sizeSlider.value;
+    sizeLabel.innerHTML = `${currentSize} x ${currentSize}`;
+   
 })
+
+
+
+
 
