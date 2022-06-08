@@ -33,7 +33,8 @@ function sketch(element) {
     if (element.type === 'mouseover' && !isMouseDown) return
     
     if(currentMode == "random"){
-
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        changeColor(`#${randomColor}`);
     }
     else if(currentMode == "eraser"){
         changeColor("#ffffff");
@@ -51,6 +52,7 @@ function checkMode(mode){
         randomModeBtn.classList.remove("mode-active");
         eraserBtn.classList.remove("mode-active");
         currentMode = "color";
+        changeColor("#000000");
     }else if (mode == "random"){
         randomModeBtn.classList.add("mode-active");
         colorModeBtn.classList.remove("mode-active");
