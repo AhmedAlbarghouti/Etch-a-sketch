@@ -104,3 +104,10 @@ button {
     
 }
 
+.grid{
+    display: grid;
+}
+
+.grid-element{
+    user-select: none;
+}
